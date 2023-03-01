@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-wrapper>div {
+    border-radius: 600px;
+    overflow: hidden;
+}
+.slider-wrapper .slider-info-wrapper {
+    color: white;
+    background: black;
+}
+.slider-wrapper .slider-info-wrapper .slider-title {
+    font-size: 2rem;
+    padding: 3rem;
+}
+.slider-wrapper .slider-info-wrapper .slider-description {
+    font-size: 1rem;
+    margin-left: 30%;
+    text-align: left;
+}
+
+.carousel-dot-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot-item {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+}
+.dot-item.active {
+    width: 30px;
+    background: black;
+    border-radius: 12px;
+}
+.slider-image, .slider-description {
+    transition: all 0.3s ease-in;
+}
